@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "maze-solver"
+version = "0.1.0"
+description = ""
+authors = ["magomar <magomar@gmail.com>"]
+include = ["assets/*.*"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+opencv-python = "^4.4.0"
+numpy = "^1.19.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.790"
+
+[tool.poetry.scripts]
+maze = "maze_solver.main:app"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
